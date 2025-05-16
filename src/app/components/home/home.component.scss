@@ -17,7 +17,7 @@
   .nav-bar-center-text {
     display: flex;
     div {
-      padding-right: 20px !important; /* Adds 20px of padding on the left side */
+      padding-right: 20px !important;
     }
     .shop-txt{
       display: flex;
@@ -35,7 +35,7 @@
     display: flex;
     align-items: center;
     div {
-      padding-right: 20px !important; /* Adds 20px of padding on the left side */
+      padding-right: 20px !important; 
     }
      /*Login Button SCSS */
     .login-btn{
@@ -84,8 +84,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 100px; /* Adjust based on your design */
-  width: 100%;   /* Full width of the parent */
+  height: 100px; 
   text-align: center;
   
   span {
@@ -97,10 +96,7 @@
 
 .side-tray {
   position: relative;
-  width: 300px; /* Adjust width as needed */
-  height: 500px; /* Adjust height as needed */
-  // background-color: #f5f5f5;
-
+  width: 300px; 
   overflow: hidden;
 }
 
@@ -115,7 +111,7 @@
   color: rgb(0, 0, 0);
   text-align: center;
   padding: 15px;
-  z-index: 1; /* Ensure it is above items */
+  z-index: 1; 
   box-shadow: 6px -3px 5px black;
   .info-img {
     img {
@@ -147,19 +143,15 @@
 
 /* Adjust Items to Start Below Info */
 .side-tray-items {
-  margin-top: 160px; /* Adjust based on height of .side-tray-info */
+  margin-top: 160px; 
   padding: 10px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 
   .tray-sub{
-    display: flex;
-    align-items: center;
-  //     display: flex;
-  // align-items: center;
-  // padding: 10px;
-  // transition: background 0.3s, color 0.3s;
+  display: flex;
+  align-items: center;
   cursor: pointer;
   border: none;
   background: none;
@@ -172,7 +164,7 @@
     }
   }
   .tray-sub:hover {
-  background-color: #f0f0f0; /* Background on hover */
+  background-color: #f0f0f0; 
   border-radius: 8px;
 }
 
@@ -197,7 +189,7 @@
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 cards in a row */
+  grid-template-columns: repeat(3, 1fr); 
   gap: 20px;
   flex: 1;
 }
@@ -206,17 +198,14 @@
   background-color: #fff;
   border-radius: 12px;
   overflow: hidden;
-  // box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  // text-align: center;
-  // padding: 10px;
-   position: relative; /* Ensure relative position for the absolute button */
+  position: relative;
 
   .card-image {
     width: 100%;
-    height: 250px; /* Adjust height as needed */
+    height: 250px; 
     overflow: hidden;
     background-color: #f4f4f4;
-      position: relative; /* For positioning the button */
+      position: relative; 
 
     img {
       width: 100%;
@@ -231,8 +220,6 @@
     padding: 15px;
     display: flex;
     flex-direction: column;
-    // justify-content: flex-start;
-    // align-items: center;
     gap: 8px;
 
     .card-title {
@@ -244,7 +231,6 @@
     .card-desc {
       font-size: 14px;
       color: #777;
-      // text-align: center;
     }
 
     .card-price {
@@ -297,30 +283,30 @@
 
     .info-bar1  {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    gap: 10px; /* Space between each span */
+    flex-direction: column; 
+    gap: 10px; 
   }
 
   .info-bar2  {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    gap: 10px; /* Space between each span */
+    flex-direction: column; 
+    gap: 10px; 
   }
 
   .info-bar3{
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    gap: 10px; /* Space between each span */
+    flex-direction: column;
+    gap: 10px;
 
   }
   
   .info-bar4{
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    gap: 16px; /* Space between each span */
+    flex-direction: column;
+    gap: 16px;
 
   }
-  // display: flex;
+
   .social{
     display: flex;
     align-items: center;
