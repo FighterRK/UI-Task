@@ -1,0 +1,411 @@
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;;
+
+  .nav-bar-logo {
+    display: flex;
+    img {
+      width:70px;
+    }
+    p {
+      font-size: 46px;
+    }
+  }
+
+  .nav-bar-center-text {
+    display: flex;
+    div {
+      padding-right: 20px !important; /* Adds 20px of padding on the left side */
+    }
+    .shop-txt{
+      display: flex;
+      img {
+        width:12px;
+        margin-left: 6px;
+        margin-top: 5px;
+        
+
+      }
+    }
+  }
+
+  .nav-bar-checkout-bar{
+    display: flex;
+    align-items: center;
+    div {
+      padding-right: 20px !important; /* Adds 20px of padding on the left side */
+    }
+     /*Login Button SCSS */
+    .login-btn{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+
+      button {
+        cursor: pointer;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 9px 21px;
+        border-radius: 8px;
+      }
+
+    }
+
+    .search-icon{
+      img {
+        width: 26px;
+      }
+
+    }
+    .wish-icon{
+      img {
+        width: 26px;
+      }
+
+    }
+    .cart-icon{
+      img {
+        width: 26px;
+      }
+
+    }
+
+
+
+  }
+  
+}
+
+.profile-txt {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100px; /* Adjust based on your design */
+  width: 100%;   /* Full width of the parent */
+  text-align: center;
+  
+  span {
+    display: block;
+    font-size: 32px;
+    margin-left: 130px;
+  }
+}
+
+.side-tray {
+  position: relative;
+  width: 300px; /* Adjust width as needed */
+  height: 500px; /* Adjust height as needed */
+  // background-color: #f5f5f5;
+
+  overflow: hidden;
+}
+
+/* Make Info Div Always on Top */
+.side-tray-info {
+      display: flex;
+    justify-content: space-around;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 15px;
+  z-index: 1; /* Ensure it is above items */
+  box-shadow: 6px -3px 5px black;
+  .info-img {
+    img {
+          border-radius: 41px;
+    width: 78px;
+    height: 71px;
+    object-fit: cover;
+
+    }
+  }
+
+  .info-hello .hello {
+      padding-top: 9px;
+        margin-left: 43px;
+       
+  }
+  .hi-img{
+        width: 35px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .info-name{
+    font-weight:700;
+    font-size: 24px;
+  }
+
+}
+
+/* Adjust Items to Start Below Info */
+.side-tray-items {
+  margin-top: 160px; /* Adjust based on height of .side-tray-info */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .tray-sub{
+    display: flex;
+    align-items: center;
+  //     display: flex;
+  // align-items: center;
+  // padding: 10px;
+  // transition: background 0.3s, color 0.3s;
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+  text-align: left;
+    img{
+      width: 35px;
+      padding: 7px;
+      margin-right: 7px;
+    }
+  }
+  .tray-sub:hover {
+  background-color: #f0f0f0; /* Background on hover */
+  border-radius: 8px;
+}
+
+}
+
+.body-section {
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+  padding: 70px;
+  // padding: 20px;
+}
+
+.side-section {
+  flex: 0 0 200px;
+      box-shadow: 0px 0px 1px black;
+  background-color: #ffffff;
+  padding: 10px;
+  max-height: 532px;
+  border-radius: 2px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards in a row */
+  gap: 20px;
+  flex: 1;
+}
+
+.card-section {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  // box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  // text-align: center;
+  // padding: 10px;
+   position: relative; /* Ensure relative position for the absolute button */
+
+  .card-image {
+    width: 100%;
+    height: 250px; /* Adjust height as needed */
+    overflow: hidden;
+    background-color: #f4f4f4;
+      position: relative; /* For positioning the button */
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: scale-down;
+    }
+
+
+  }
+
+  .card-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    // justify-content: flex-start;
+    // align-items: center;
+    gap: 8px;
+
+    .card-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .card-desc {
+      font-size: 14px;
+      color: #777;
+      // text-align: center;
+    }
+
+    .card-price {
+      font-size: 16px;
+      font-weight: bold;
+      // color: #2b8a3e;
+    }
+
+
+  }
+
+  .price{
+    display: flex;
+    align-items: center;
+  }
+
+      .price .reduced-price {
+      text-decoration: line-through;
+      color: #888;
+      font-size: 16px;
+    }
+
+    .price .current-price {
+      color: #070808;
+      font-size: 18px;
+      margin-right: 10px;
+    }
+}
+
+.footer-section{
+  padding: 50px;
+  background-color: #121117;
+  color: white;
+  .info{
+    display: flex;
+    justify-content:space-between ;
+
+    // align-items: center;
+    .nav-bar-logo {
+      display: flex;
+      img {
+        width:70px;
+      }
+      p {
+        font-size: 46px;
+      }
+    }
+  
+  }
+
+    .info-bar1  {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 10px; /* Space between each span */
+  }
+
+  .info-bar2  {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 10px; /* Space between each span */
+  }
+
+  .info-bar3{
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 10px; /* Space between each span */
+
+  }
+  
+  .info-bar4{
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 16px; /* Space between each span */
+
+  }
+  // display: flex;
+  .social{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgb(255, 255, 255,0.1);
+    margin-top: 30px;
+
+    img {
+      max-width: 69%;
+    }
+  }
+
+  .info-call{
+    display: flex;
+    img {
+      filter: invert(1);
+      width: 20px;
+      margin-right: 10px;
+    }
+  }
+
+      .email-input {
+      display: flex;
+      align-items: center;
+      padding: 10px 15px;
+      border: 2px solid #888;
+      border-radius: 10px;
+      background-color: transparent;
+      color: #fff;
+      font-size: 16px;
+      gap: 10px;
+    }
+
+    .email-input input {
+      background: none;
+      border: none;
+      outline: none;
+      color: #fff;
+      font-size: 16px;
+      flex: 1;
+    }
+
+    .email-input input::placeholder {
+      color: #aaa;
+    }
+
+    .email-input svg {
+      width: 20px;
+      height: 20px;
+      stroke: #aaa;
+    }
+
+    .email-input button {
+      background: none;
+      border: none;
+      color: #aaa;
+      cursor: pointer;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+    }
+
+    .email-input button:hover {
+      color: #fff;
+    }
+}
+
+.cart-btn {
+    position: absolute;
+    top: 81%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 42px;
+    background-color: white;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: opacity 0.3s, transform 0.3s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.card-image:hover .cart-btn {
+  opacity: 1;
+  visibility: visible;
+}

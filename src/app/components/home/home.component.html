@@ -1,0 +1,230 @@
+<div class="nav-bar">
+  <div class="nav-bar-logo">
+    <img src="letter-k-svgrepo-com.svg" alt="Search" />
+    <p>Krist</p>
+  </div>
+  <div class="nav-bar-center-text">
+    <div class="home-txt">Home</div>
+    <div class="shop-txt">
+      Shop <img src="down-arrow-svgrepo-com.svg" alt="Search" />
+    </div>
+    <div class="story-txt">Our Story</div>
+    <div class="blog-txt">Blog</div>
+    <div class="contact-txt">Contact Us</div>
+  </div>
+  <div class="nav-bar-checkout-bar">
+    <div class="search-icon">
+      <img src="icons8-search.svg" alt="Search" />
+    </div>
+    <div class="wish-icon">
+      <img src="heart-svgrepo-com.svg" alt="Wishlist" />
+    </div>
+    <div class="cart-icon">
+      <img src="shopping-bag-svgrepo-com.svg" alt="Wishlist" />
+    </div>
+    <div class="login-btn">
+      <button>Login</button>
+    </div>
+  </div>
+</div>
+<div class="profile-txt">
+  <span>My Profile</span>
+</div>
+
+<div class="body-section">
+  <div class="side-section">
+    <!-- Side Tray -->
+    <div class="side-tray">
+      <div class="side-tray-info">
+        <div class="info-img">
+          <img src="me.jpg" alt="" />
+        </div>
+        <div class="info-hello">
+          <div class="hi-img">
+            <span class="hello">Hello</span>
+            <img src="waving-hand-svgrepo-com.svg" alt="" />
+          </div>
+          <div class="info-name">
+            <span>Robert Fox</span>
+          </div>
+        </div>
+      </div>
+      <div class="side-tray-items">
+        <div class="tray-person">
+          <div class="tray-sub">
+            <div class="tray-img">
+              <img src="person-svgrepo-com.svg" alt="" />
+            </div>
+            <div class="tray-detail">
+              <span>Personal Information</span>
+            </div>
+          </div>
+        </div>
+        <div class="tray-order">
+          <div class="tray-sub">
+            <div class="tray-img">
+              <img src="shopping-bag-svgrepo-com.svg" alt="" />
+            </div>
+            <div class="tray-detail">
+              <span>My Orders</span>
+            </div>
+          </div>
+        </div>
+        <div class="tray-wishlist">
+          <div class="tray-sub">
+            <div class="tray-img">
+              <img src="heart-svgrepo-com.svg" alt="" />
+            </div>
+            <div class="tray-detail">
+              <span>My Wishlist</span>
+            </div>
+          </div>
+        </div>
+        <div class="tray-address">
+          <div class="tray-sub">
+            <div class="tray-img">
+              <img src="location-svgrepo-com.svg" alt="" />
+            </div>
+            <div class="tray-detail">
+              <span>Manage Address</span>
+            </div>
+          </div>
+        </div>
+        <div class="tray-cards">
+          <div class="tray-sub">
+            <div class="tray-img">
+              <img src="notification-unread-lines-svgrepo-com.svg" alt="" />
+            </div>
+            <div class="tray-detail">
+              <span>Saved Cards</span>
+            </div>
+          </div>
+        </div>
+        <div class="tray-notifcation">
+          <div class="tray-sub">
+            <div class="tray-img">
+              <img src="notification-bell-svgrepo-com.svg" alt="" />
+            </div>
+            <div class="tray-detail">
+              <span>Notifications</span>
+            </div>
+          </div>
+        </div>
+        <div class="settings">
+          <div class="tray-sub">
+            <div class="tray-img">
+              <img src="settings-svgrepo-com.svg" alt="" />
+            </div>
+            <div class="tray-detail">
+              <span>Settings</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Side Tray -->
+  </div>
+
+<div class="card-section">
+  <div class="card-container">
+    <div class="card-section" *ngFor="let product of products">
+      <div class="card-image">
+        <img [src]="product.image" alt="product" />
+                  <div class="cart-btn">
+            <button>Move To Cart</button>
+    </div>
+      </div>
+      <div class="card-content">
+        <span class="card-title">{{ product.title }}</span>
+        <span class="card-desc">{{ product.description }}</span>
+        <div class="price">
+          <span class="current-price">{{ product.currentPrice }}</span>
+          <span class="reduced-price">{{ product.reducedPrice }}</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<div class="footer-section">
+  <div class="info">
+    <div class="info-bar1">
+      <div class="nav-bar-logo" style="margin-left: -11px;">
+        <img src="letter-k-svgrepo-com.svg" alt="Search" />
+        <p>Krist</p>
+      </div>
+      <div class="info-call">
+        <div class="footer-img">
+          <img src="phone-call-svgrepo-com.svg" alt="">
+        </div>
+        <div class="footer txt">6312589</div>
+      </div>
+      <div class="info-call">
+        <div class="footer-img">
+          <img src="mail-pencil-svgrepo-com.svg" alt="">
+        </div>
+        <div class="footer txt"></div>
+<span>{{ 'krist@example.com' }}</span>
+      </div>
+            <div class="info-call">
+        <div class="footer-img">
+          <img src="location-svgrepo-com.svg" alt="">
+        </div>
+        <div class="footer txt">
+          <span>Hacker Way, Menlo Park, CA 94025, USA</span>
+        </div>
+      </div>
+    </div>
+    <div class="info-bar2">
+      <span style="font-weight: 600;">Information</span>
+      <span>My Account</span>
+      <span>Login</span>
+      <span>My Cart</span>
+      <span>My Wishlist</span>
+      <span>Checkout</span>
+    </div>
+    <div class="info-bar3">
+      <span style="font-weight: 600;">My Service</span>
+      <span>About Us</span>
+      <span>Careers</span>
+      <span>Delivery Information</span>
+      <span>Privacy Policy</span>
+      <span>Terms & Conditions</span>
+    </div>
+    <div class="info-bar4">
+            <div class="footer-details">
+  <span style="font-weight: 600;">Subscribe</span>
+</div>
+      <div class="footer-details">
+  <span>Enter Your Email below and be the first one to know <br> about new collecrions and product launches</span>
+</div>
+      <div class="email-input">
+  <!-- Email Icon (SVG) -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+    <polyline points="22,6 12,13 2,6"></polyline>
+  </svg>
+  
+  <input type="text" placeholder="Your Email">
+  <button>
+    <!-- Arrow Icon (SVG) -->
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7-7l7 7-7 7" />
+    </svg>
+  </button>
+</div>
+
+    </div>
+  </div>
+  <div class="social">
+    <div class="cc">
+      <img src="Screenshot 2025-05-16 113234.png" alt="">
+    </div>
+    <div class="rights"><span>2025 Krist All Rights Recieved</span></div>
+    <div class="media">
+            <img src="fb.png" alt="">
+    </div>
+  </div>
+</div>
