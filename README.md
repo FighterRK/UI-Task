@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 # MockUi
+![Screenshot (30)](https://github.com/user-attachments/assets/50c4e064-1ea7-4ad4-af40-7159aa8e0ed4)
+![Screenshot (31)](https://github.com/user-attachments/assets/a0287316-6711-4934-a7e2-fecbd7066a8c)
+![Screenshot (43)](https://github.com/user-attachments/assets/16bb8a0c-dbe5-4fe4-9988-24d04d92c93c)
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.5.
 
